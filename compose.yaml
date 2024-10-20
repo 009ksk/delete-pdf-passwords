@@ -1,0 +1,10 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: python-dev-docker-image:latest
+    container_name: python-dev-container
+    volumes:
+      - .:/app
+    tty: true
